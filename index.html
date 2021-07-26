@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit-Loss Calculator</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./loss.png" rel="icon" type="image/lg-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-heading">
+                <h1>Check Profit / Loss on your Stock</h1>
+            </div>
+            <div class="header-git">
+                <a href="" title="Github Repo"><i class="fa fa-github fa-3x"></i></a>
+            </div>
+        </header>
+        <main>
+            <section class="form-section">
+                <table>
+                    <tr>
+                        <td class="input"><input type="number" class="stock-price" min="1" placeholder="Enter purchase price" required ></td>
+                        <td class="content">Stock Purchase Price</td>
+                    </tr>
+                    <tr>
+                        <td class="input"><input type="number" min="1" class="stock-quantity"  placeholder="Enter stock quantity" required ></td>
+                        <td class="content">Stock Quantity Purchased</td>
+                    </tr>
+                    <tr>
+                        <td class="input"><input type="number" min="1" class="current-price"  placeholder="Enter current stock price" required ></td>
+                        <td class="content"> Current Stock Price</td>
+                    </tr>
+                    <tr>
+                        <td class="input"> 
+                            <button class="btn-submit">Calculate</button>
+                        </td>
+                    </tr>
+                </table>
+                <article>
+                    <img class="profit-loss" src="./giphy.gif"  alt="stock-image"/>
+                </article>
+            </section>
+        </main>
+        <div class="output-div">
+
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
